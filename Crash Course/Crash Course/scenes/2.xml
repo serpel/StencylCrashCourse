@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="24" extheight="448" extwidth="800" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="85.0" height="384" id="2" name="Level 3" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="736">
+    <layers>
+        <grad-bg b1="0" b2="153" g1="204" g2="204" r1="255" r2="255"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions>
+        <region b="64" g="64" h="27" id="0" name="Points" pts="4,0.0,0.0,0.0,27.0,46.0,27.0,46.0,0.0" r="64" type="box" w="46" x="279" y="13"/>
+    </regions>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="2" c="false" group="4" id="2" name="Mr Dennis 2" sx="1.0" sy="1.0" x="162" y="64" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="0" id="0" name="Mambo 3" sx="1.0" sy="1.0" x="-4" y="33" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="4" id="40" name="Monster 5" sx="1.0" sy="1.0" x="587" y="80" z="0"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="21">
+            <prop id="1" list="0" val="3"/>
+            <prop id="2" list="0" val="0"/>
+        </s>
+        <s enabled="true" id="25"/>
+    </snippets>
+    <terrain>
+        <p pts="4,0.0,256.0,0.0,0.0,192.0,0.0,192.0,256.0" x="448.0" y="128.0"/>
+        <p pts="4,32.0,0.0,32.0,32.0,0.0,32.0,0.0,0.0" x="0.0" y="64.0"/>
+        <p pts="4,160.0,160.0,0.0,160.0,0.0,0.0,160.0,0.0" x="64.0" y="96.0"/>
+        <p pts="4,32.0,0.0,32.0,32.0,0.0,32.0,0.0,0.0" x="384.0" y="128.0"/>
+        <p pts="4,32.0,0.0,32.0,32.0,0.0,32.0,0.0,0.0" x="320.0" y="128.0"/>
+        <p pts="4,32.0,0.0,32.0,32.0,0.0,32.0,0.0,0.0" x="256.0" y="96.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>

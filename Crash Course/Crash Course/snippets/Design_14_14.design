@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <draw comment="false" x="21" y="33">
+            <group eventID="2" id="-1">
+                <set-color comment="false" x="32" y="58">
+                    <color b="0" g="0" id="0" r="255"/>
+                </set-color>
+                <drawfill-rect comment="false" x="32" y="85">
+                    <int id="0" val="1"/>
+                    <int id="1" val="0"/>
+                    <neg comment="false" id="2" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <get-val-14-6 comment="false" id="0" x="0" y="0"/>
+                            <get-val-14-7 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                    </neg>
+                    <times comment="false" id="3" x="0" y="0">
+                        <get-wh comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-wh>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-val-14-1 comment="false" id="0" x="0" y="0"/>
+                            <get-val-14-2 comment="false" id="1" x="0" y="0"/>
+                        </div>
+                    </times>
+                    <get-val-14-7 comment="false" id="4" x="0" y="0"/>
+                </drawfill-rect>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-14-1 comment="false" x="26" y="40">
+                    <get-val-14-2 comment="false" id="0" x="0" y="0"/>
+                </set-val-14-1>
+            </group>
+        </init>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <incdec comment="false" x="26" y="40">
+                    <int id="0" val="1"/>
+                    <int id="1" val="1"/>
+                    <get-val-14-5 comment="false" id="2" x="0" y="0"/>
+                </incdec>
+                <if comment="false" x="26" y="72">
+                    <group eventID="4" id="-1">
+                        <if comment="false" x="37" y="102">
+                            <group eventID="4" id="-1">
+                                <if comment="false" x="48" y="135">
+                                    <group eventID="4" id="-1">
+                                        <scene-change-new comment="false" x="59" y="160">
+                                            <get-val-14-3 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="1"/>
+                                            <int id="3" val="0"/>
+                                            <int id="4" val="1"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <get-val-14-4 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <else comment="false" x="48" y="204">
+                                    <group eventID="4" id="-1">
+                                        <scene-change-through comment="false" x="59" y="224">
+                                            <get-val-14-3 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="1"/>
+                                        </scene-change-through>
+                                    </group>
+                                </else>
+                            </group>
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="3"/>
+                                <int id="1" val="0"/>
+                            </value>
+                        </if>
+                        <else comment="false" x="37" y="280">
+                            <group eventID="4" id="-1">
+                                <if comment="false" x="48" y="300">
+                                    <group eventID="4" id="-1">
+                                        <scene-reload-new comment="false" x="59" y="325">
+                                            <int id="0" val="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="0"/>
+                                            <int id="3" val="1"/>
+                                        </scene-reload-new>
+                                    </group>
+                                    <get-val-14-4 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <else comment="false" x="48" y="364">
+                                    <group eventID="4" id="-1">
+                                        <scene-reload-through comment="false" x="59" y="384">
+                                            <int id="0" val="0"/>
+                                            <int id="1" val="1"/>
+                                        </scene-reload-through>
+                                    </group>
+                                </else>
+                            </group>
+                        </else>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-14-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="Hit"/>
+        </event-custom>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

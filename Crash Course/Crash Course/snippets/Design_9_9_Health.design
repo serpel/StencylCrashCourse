@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-9-4 comment="false" x="26" y="40">
+                    <get-val-9-5 comment="false" id="0" x="0" y="0"/>
+                </set-val-9-4>
+            </group>
+            <int id="0" val="restore"/>
+        </receive-message>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <incdec comment="false" x="26" y="40">
+                    <int id="0" val="4"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </incdec>
+                <if comment="false" x="26" y="67">
+                    <group eventID="-1" id="-1">
+                        <set-val-9-4 comment="false" x="37" y="97">
+                            <get-val-9-5 comment="false" id="0" x="0" y="0"/>
+                        </set-val-9-4>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-9-4 comment="false" id="0" x="0" y="0"/>
+                        <get-val-9-5 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+            </group>
+            <int id="0" val="heal"/>
+        </receive-message>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="78"/>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Invincible"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="110">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="153"/>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="7"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <eq2 comment="false" id="1" x="0" y="0">
+                            <get-val-9-7 comment="false" id="0" x="0" y="0"/>
+                            <actor comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="lastcollided" id="0"/>
+                            </actor>
+                        </eq2>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="185">
+                    <group eventID="-1" id="-1">
+                        <set-val-9-2 comment="false" x="37" y="218">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="lastcollided" id="0"/>
+                                    <int id="1" val="Inflicts Damage"/>
+                                    <int id="2" val="damage"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-9-2>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="lastcollided" id="0"/>
+                        <int id="1" val="Inflicts Damage"/>
+                    </has-snippet>
+                </if>
+                <else comment="false" x="26" y="268">
+                    <group eventID="-1" id="-1">
+                        <set-val-9-2 comment="false" x="37" y="288">
+                            <get-val-9-1 comment="false" id="0" x="0" y="0"/>
+                        </set-val-9-2>
+                    </group>
+                </else>
+                <set-val-9-7 comment="false" x="26" y="325">
+                    <ACTOR eid="lastcollided" id="0"/>
+                </set-val-9-7>
+                <incdec comment="false" x="26" y="352">
+                    <int id="0" val="4"/>
+                    <int id="1" val="1"/>
+                    <get-val-9-2 comment="false" id="2" x="0" y="0"/>
+                </incdec>
+                <shout comment="false" x="26" y="384">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="tookDamage"/>
+                </shout>
+            </group>
+        </collide>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <shout comment="false" x="37" y="70">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="healthDepleted"/>
+                        </shout>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-9-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+            </group>
+            <int id="0" val="tookDamage"/>
+        </receive-message>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-9-4 comment="false" x="26" y="40">
+                    <get-val-9-6 comment="false" id="0" x="0" y="0"/>
+                </set-val-9-4>
+            </group>
+        </init>
+    </group>
+    <group eventID="5" id="-1"/>
+</groups>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="2" desc="" eventsnippetid="8" extheight="448" extwidth="1696" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="85.0" height="384" id="1" name="Level 2" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1536">
+    <layers>
+        <grad-bg b1="128" b2="255" g1="128" g2="204" r1="0" r2="0"/>
+        <background blendMode="normal" customScrollFactor="false" id="2" locked="true" name="Cloudy Sky" opacity="100" order="2" rid="33" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="0,0,255" id="1" locked="false" name="Layer 1" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions>
+        <region b="64" g="64" h="34" id="0" name="Win" pts="4,34.0,0.0,34.0,34.0,0.0,34.0,0.0,0.0" r="64" type="box" w="34" x="569" y="241"/>
+        <region b="64" g="64" h="33" id="1" name="DoorLevelExtra" pts="4,26.0,0.0,26.0,33.0,0.0,33.0,0.0,0.0" r="64" type="box" w="26" x="1" y="223"/>
+        <region b="64" g="64" h="26" id="2" name="DoorLevelExtraCoins" pts="4,23.0,0.0,23.0,26.0,0.0,26.0,0.0,0.0" r="64" type="box" w="23" x="389" y="0"/>
+        <region b="64" g="64" h="27" id="3" name="Player" pts="4,27.0,0.0,27.0,27.0,0.0,27.0,0.0,0.0" r="64" type="box" w="27" x="0" y="163"/>
+        <region b="64" g="64" h="61" id="4" name="Door" pts="4,36.0,0.0,36.0,61.0,0.0,61.0,0.0,0.0" r="64" type="box" w="36" x="1499" y="291"/>
+    </regions>
+    <terrainRegions>
+        <terrainRegion b="64" g="64" group="1" h="31" id="0" name="Terrain 0" pts="4,0.0,0.0,0.0,31.0,30.0,31.0,30.0,0.0" r="64" type="box" w="30" x="288" y="288"/>
+        <terrainRegion b="64" g="64" group="1" h="37" id="1" name="Terrain 1" pts="4,0.0,0.0,0.0,37.0,26.0,37.0,26.0,0.0" r="64" type="box" w="26" x="261" y="281"/>
+    </terrainRegions>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="4" id="2" name="Mr Dennis 1" sx="1.0" sy="1.0" x="474" y="33" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="4" id="2" name="Mr Dennis 2" sx="1.1666666" sy="1.0625" x="536" y="287" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="4" id="2" name="Mr Dennis 3" sx="1.0" sy="1.0" x="143" y="160" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="0" id="0" name="Mambo 4" sx="1.0" sy="1.0" x="-5" y="159" z="0"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="21">
+            <prop id="1" list="0" val="4"/>
+            <prop id="2" list="0" val="2"/>
+        </s>
+        <s enabled="true" id="25"/>
+    </snippets>
+    <terrain>
+        <p pts="12,0.0,96.0,0.0,64.0,32.0,64.0,32.0,32.0,224.0,32.0,224.0,0.0,448.0,0.0,448.0,32.0,480.0,32.0,480.0,64.0,512.0,64.0,512.0,96.0" x="384.0" y="288.0"/>
+        <p pts="8,0.0,96.0,0.0,0.0,32.0,0.0,32.0,32.0,64.0,32.0,64.0,64.0,192.0,64.0,192.0,96.0" x="160.0" y="288.0"/>
+        <p pts="4,64.0,256.0,0.0,256.0,0.0,0.0,64.0,0.0" x="736.0" y="0.0"/>
+        <p pts="16,256.0,128.0,256.0,96.0,224.0,96.0,224.0,64.0,192.0,64.0,192.0,32.0,0.0,32.0,0.0,0.0,224.0,0.0,224.0,32.0,256.0,32.0,256.0,64.0,288.0,64.0,288.0,96.0,320.0,96.0,320.0,128.0" x="0.0" y="192.0"/>
+        <p pts="4,0.0,0.0,128.0,0.0,128.0,128.0,0.0,128.0" x="0.0" y="256.0"/>
+        <p pts="4,0.0,32.0,0.0,0.0,352.0,0.0,352.0,32.0" x="1184.0" y="352.0"/>
+        <p pts="4,224.0,0.0,224.0,32.0,0.0,32.0,0.0,0.0" x="928.0" y="352.0"/>
+        <p pts="4,160.0,0.0,160.0,32.0,0.0,32.0,0.0,0.0" x="416.0" y="64.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>
